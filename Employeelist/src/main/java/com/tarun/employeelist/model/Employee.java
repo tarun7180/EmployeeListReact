@@ -30,10 +30,10 @@ public class Employee {
 	private String empDepartment;
 	
 	@Column(name = "emp_dob")
-	private Date empDob;
+	private String empDob;
 	
 	@Column(name = "emp_doj")
-	private Date empDoj;
+	private String empDoj;
 	
 	@Column(name = "emp_city")
 	private String empCity ;
@@ -42,7 +42,7 @@ public class Employee {
 		super();
 	}
 
-	public Employee(Long id, String empName, String empEmail, String empDepartment, Date empDob, Date empDoj,
+	public Employee(Long id, String empName, String empEmail, String empDepartment, String empDob, String empDoj,
 			String empCity) {
 		super();
 		this.id = id;
@@ -54,7 +54,7 @@ public class Employee {
 		this.empCity = empCity;
 	}
 
-	public Employee(String empName, String empEmail, String empDepartment, Date empDob, Date empDoj, String empCity) {
+	public Employee(String empName, String empEmail, String empDepartment, String empDob, String empDoj, String empCity) {
 		super();
 		this.empName = empName;
 		this.empEmail = empEmail;
@@ -96,19 +96,19 @@ public class Employee {
 		this.empDepartment = empDepartment;
 	}
 
-	public Date getEmpDob() {
+	public String getEmpDob() {
 		return empDob;
 	}
 
-	public void setEmpDob(Date empDob) {
+	public void setEmpDob(String empDob) {
 		this.empDob = empDob;
 	}
 
-	public Date getEmpDoj() {
+	public String getEmpDoj() {
 		return empDoj;
 	}
 
-	public void setEmpDoj(Date empDoj) {
+	public void setEmpDoj(String empDoj) {
 		this.empDoj = empDoj;
 	}
 
